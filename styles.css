@@ -311,6 +311,8 @@ fieldset {
 fieldset label { font-weight: 650; }
 fieldset input { width: auto; margin: 0 8px 0 0; }
 .form-honey { display: none; }
+.form-status { min-height: 1.5em; margin: 0.75rem 0 0; }
+.quote-form button:disabled { cursor: wait; opacity: 0.7; }
 
 .site-footer {
   display: flex;

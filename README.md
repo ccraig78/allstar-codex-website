@@ -37,10 +37,10 @@ Codex cannot change Durable DNS settings directly, but this deployment can provi
 
 ## Contact form note
 
-The quote form currently posts to FormSubmit:
+The quote form currently posts to Formspree:
 
 ```text
-https://formsubmit.co/allstarcollisionrepair1@gmail.com
+https://formspree.io/f/xdaqklnb
 ```
 
 Photo upload is intentionally handled by text/email links so customers can attach images from their phone without requiring a backend.

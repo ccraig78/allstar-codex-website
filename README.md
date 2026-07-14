@@ -40,10 +40,10 @@ Codex cannot change Durable DNS settings directly, but this deployment can provi
 The quote form currently posts to FormSubmit:
 
 ```text
-https://formsubmit.co/contact@allstarautocollision.com
+https://formsubmit.co/allstarcollisionrepair1@gmail.com
 ```
 
-That address was inferred from the domain because the live Durable site did not expose an email address in the crawl. Before launch, confirm the real receiving email and replace it if needed. Photo upload is intentionally handled by text/email links so customers can attach images from their phone without requiring a backend.
+Photo upload is intentionally handled by text/email links so customers can attach images from their phone without requiring a backend.
 
 ## Business details extracted from current site
 
@@ -51,4 +51,4 @@ That address was inferred from the domain because the live Durable site did not 
 - Phone: 682-430-4530
 - Address: 3123 Cartwright St, Dallas, Texas 75212
 - Services/facts: collision repair, insurance or self-pay customers, financing, choice of certified OEM parts or insurance-certified aftermarket parts, standard one-year warranty on repairs, extended warranties may be offered case by case, free onsite quotes.
-- Email: not visible on the current crawled Durable page; `contact@allstarautocollision.com` is a placeholder/inferred launch target.
+- Email: `allstarcollisionrepair1@gmail.com`

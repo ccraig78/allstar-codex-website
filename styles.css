@@ -41,6 +41,7 @@ p { line-height: 1.65; }
 .site-nav { display: flex; align-items: center; gap: 20px; font-weight: 850; }
 .site-nav a { color: #26344c; text-decoration: none; }
 .site-nav a[aria-current="page"] { color: var(--red); }
+.language-link { color: var(--blue) !important; }
 .nav-phone {
   color: white !important;
   background: linear-gradient(135deg, var(--red), #ff5a54);
@@ -361,6 +362,14 @@ fieldset input { width: auto; margin: 0 8px 0 0; }
 }
 .thanks-page img { width: min(360px, 88vw); margin: 0 auto; }
 .thanks-page h1 { margin: 0; font-size: clamp(2rem, 7vw, 4rem); }
+
+.arabic-page { direction: rtl; font-family: Tahoma, "Segoe UI", Arial, sans-serif; }
+.arabic-page .site-header, .arabic-page .site-footer { direction: rtl; }
+.arabic-page .site-nav { direction: rtl; }
+.arabic-page .hero-copy, .arabic-page .hero-panel, .arabic-page .section-heading, .arabic-page .intro-copy, .arabic-page .contact-card { text-align: right; }
+.arabic-page .hero-panel { justify-self: start; }
+.arabic-page .check-panel ul { padding-left: 0; padding-right: 20px; }
+.arabic-page .related-links { direction: rtl; }
 
 @media (max-width: 980px) {
   .site-header { flex-wrap: wrap; }

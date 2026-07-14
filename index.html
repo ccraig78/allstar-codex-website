@@ -19,27 +19,41 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "AutoBodyShop",
-        "name": "All-Star Collision Repair",
-        "url": "https://allstarautocollision.com/",
-        "telephone": "+1-682-430-4530",
-        "image": "https://allstarautocollision.com/assets/images/shop-bay.jpg",
-        "logo": "https://allstarautocollision.com/assets/images/all-star-logo.png",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "3123 Cartwright St",
-          "addressLocality": "Dallas",
-          "addressRegion": "TX",
-          "postalCode": "75212",
-          "addressCountry": "US"
-        },
-        "areaServed": ["Dallas", "Irving", "Grand Prairie", "Arlington", "Fort Worth", "DFW"],
-        "description": "Dallas auto body shop offering collision repair, paint and body work, frame repair, dent repair, bumper repair, hail damage repair, insurance claim help, and custom paint.",
-        "makesOffer": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Collision repair" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paint and body work" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Frame repair" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Insurance claim repairs" } }
+        "@graph": [
+          {
+            "@type": "AutoBodyShop",
+            "@id": "https://allstarautocollision.com/#business",
+            "name": "All-Star Collision Repair",
+            "url": "https://allstarautocollision.com/",
+            "telephone": "+1-682-430-4530",
+            "email": "allstarcollisionrepair1@gmail.com",
+            "image": "https://allstarautocollision.com/assets/images/shop-bay.jpg",
+            "logo": "https://allstarautocollision.com/assets/images/all-star-logo.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "3123 Cartwright St",
+              "addressLocality": "Dallas",
+              "addressRegion": "TX",
+              "postalCode": "75212",
+              "addressCountry": "US"
+            },
+            "areaServed": ["Dallas", "Dallas-Fort Worth metro area"],
+            "description": "Dallas auto body shop offering collision repair, paint and body work, frame repair, dent repair, bumper repair, hail damage repair, insurance claim help, and custom paint.",
+            "makesOffer": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Collision repair", "url": "https://allstarautocollision.com/collision-repair.html" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Auto body and paint", "url": "https://allstarautocollision.com/auto-body-paint.html" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dent and bumper repair", "url": "https://allstarautocollision.com/dent-bumper-repair.html" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Insurance claim repair help", "url": "https://allstarautocollision.com/insurance-claims.html" } }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://allstarautocollision.com/#website",
+            "url": "https://allstarautocollision.com/",
+            "name": "All-Star Collision Repair",
+            "publisher": { "@id": "https://allstarautocollision.com/#business" },
+            "inLanguage": "en-US"
+          }
         ]
       }
     </script>
@@ -61,7 +75,7 @@
 
     <main>
       <section class="hero">
-        <img class="hero-image" src="assets/images/shop-bay.jpg" alt="Vehicle inside the All-Star Collision Repair shop in Dallas" />
+        <img class="hero-image" src="assets/images/shop-bay.jpg" alt="Vehicle inside the All-Star Collision Repair shop in Dallas" width="1920" height="1440" fetchpriority="high" />
         <div class="hero-copy">
           <p class="eyebrow">Dallas collision repair</p>
           <h1>Clear collision repair after an accident.</h1>
@@ -103,9 +117,9 @@
           <h2>Body work, paint, and structural repair in one Dallas shop.</h2>
         </div>
         <div class="card-grid three">
-          <article><span>01</span><h3>Collision Repair</h3><p>Accident damage repair for panels, fitment, structural concerns, paint, and related body work.</p></article>
-          <article><span>02</span><h3>Paint & Body Work</h3><p>Paint matching, refinishing, touch-ups, panel paint, and custom paint by estimate.</p></article>
-          <article><span>03</span><h3>Insurance Claims</h3><p>Photo-friendly documentation and repair planning for insurance or self-pay customers.</p></article>
+          <article><span>01</span><h3><a href="collision-repair.html">Collision Repair</a></h3><p>Accident damage repair for panels, fitment, structural concerns, paint, and related body work.</p></article>
+          <article><span>02</span><h3><a href="auto-body-paint.html">Paint & Body Work</a></h3><p>Paint matching, refinishing, touch-ups, panel paint, and custom paint by estimate.</p></article>
+          <article><span>03</span><h3><a href="insurance-claims.html">Insurance Claims</a></h3><p>Photo-friendly documentation and repair planning for insurance or self-pay customers.</p></article>
         </div>
         <div class="center-actions">
           <a class="btn dark" href="services.html">View All Services</a>
@@ -130,16 +144,16 @@
           <h2>Real All-Star shop photos, not a generic auto body template.</h2>
         </div>
         <div class="gallery-row">
-          <img src="assets/images/shop-interior.jpg" alt="All-Star Collision Repair shop interior in Dallas" />
-          <img src="assets/images/painted-part.jpg" alt="Painted auto body part after repair work" />
-          <img src="assets/images/technician-work.jpg" alt="Technician working on a vehicle repair" />
+          <img src="assets/images/shop-interior.jpg" alt="All-Star Collision Repair shop interior in Dallas" width="1920" height="1440" loading="lazy" />
+          <img src="assets/images/painted-part.jpg" alt="Painted auto body part after repair work" width="1920" height="1440" loading="lazy" />
+          <img src="assets/images/technician-work.jpg" alt="Technician working on a vehicle repair" width="1440" height="1920" loading="lazy" />
         </div>
         <a class="text-link" href="gallery.html">See the gallery</a>
       </section>
 
       <section class="section-pad split dark-section">
         <div>
-          <p class="eyebrow">Local SEO and local trust</p>
+          <p class="eyebrow">Dallas auto body shop</p>
           <h2>Dallas auto body repair for drivers who need the car back quickly.</h2>
           <p>All-Star Collision Repair serves Dallas and nearby DFW drivers looking for collision repair, auto paint, body work, frame repair, dent repair, bumper repair, hail damage help, custom paint, and insurance claim repair.</p>
         </div>
@@ -159,7 +173,7 @@
       <img src="assets/images/all-star-logo-transparent.png" alt="All-Star Collision Repair" />
       <div>
         <p>All-Star Collision Repair. Dallas auto body, paint, and collision repair.</p>
-        <p><a href="tel:6824304530">682-430-4530</a> · <a href="https://www.google.com/maps/dir/?api=1&destination=3123%20Cartwright%20St%2C%20Dallas%2C%20TX%2075212" target="_blank" rel="noopener">3123 Cartwright St, Dallas, TX 75212</a></p>
+        <p><a href="tel:6824304530">682-430-4530</a> · <a href="mailto:allstarcollisionrepair1@gmail.com">Email</a> · <a href="https://www.google.com/maps/dir/?api=1&destination=3123%20Cartwright%20St%2C%20Dallas%2C%20TX%2075212" target="_blank" rel="noopener">3123 Cartwright St, Dallas, TX 75212</a></p>
       </div>
     </footer>
     <script src="script.js"></script>

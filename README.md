@@ -48,7 +48,8 @@ Photo upload is intentionally handled by text/email links so customers can attac
 ## Business details extracted from current site
 
 - Business name: All-Star Collision Repair
-- Phone: 682-430-4530
+- Office phone: 214-782-9009
+- Quote-text destination: intentionally omitted from visible website copy
 - Address: 3123 Cartwright St, Dallas, Texas 75212
 - Services/facts: collision repair, insurance or self-pay customers, financing, choice of certified OEM parts or insurance-certified aftermarket parts, standard one-year warranty on repairs, extended warranties may be offered case by case, free onsite quotes.
 - Email: `allstarcollisionrepair1@gmail.com`

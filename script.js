@@ -8,6 +8,16 @@ if (navToggle && siteNav) {
   });
 }
 
+// Keep the quote-text line out of visible page copy and simple phone-number scrapers.
+// The public office number remains the only phone number displayed on the site.
+const quoteTextNumber = ["214", "524", "8401"].join("");
+
+document.querySelectorAll("[data-quote-text]").forEach((link) => {
+  const body = link.dataset.smsBody ? decodeURIComponent(link.dataset.smsBody) : "";
+  const query = body ? `?body=${encodeURIComponent(body)}` : "";
+  link.href = `sms:${quoteTextNumber}${query}`;
+});
+
 const estimateForm = document.querySelector("#estimate");
 
 if (estimateForm) {
